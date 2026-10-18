@@ -1,0 +1,392 @@
+/* CSS reset, dit niet aanpassen! */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Hieronder mag je eigen CSS code */
+
+body{
+    display: grid;
+    grid-template-columns: 24.75vw 24.75vw 24.75,vw 24.75vw;
+    grid-template-rows: 8vh 82vh 35vh 35vh 15vh 55vh;
+    gap: 0.5vw;
+    box-sizing: border-box;
+    padding-left: 0.5vw;
+    padding-right:0.5vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+.date{
+  font-size: small;
+  color: gray;
+}
+
+h2{
+  font-size: large;
+}
+
+h1{
+  margin-left: 17vw; 
+  font-size: 5vh;
+}
+
+.fonttext {
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+    margin: 0;
+    text-align: left;
+}
+
+.browse {
+    position: absolute;
+    bottom: 1vw;
+    right: 1vw;
+    margin: 0;
+    text-align: right;
+}
+
+h4{
+  font-size: medium;
+  font-weight: 500;
+}
+
+#whitefont{
+  color: white;
+}
+
+
+/* divs */
+#nav{
+  background-color: rgba(255,255,255,0.90);
+  grid-column: 1/5;
+  grid-row: 1/2;
+  margin-left: -0.5vw;
+  margin-right: -0.5vw;
+  margin-top: -0.5vw;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+  display: flex;
+  align-items: center;
+
+}
+
+
+
+#typo {
+    margin-left: 0.5vw;
+     width: 12.5vw;
+    height: auto;
+}
+
+#bar {
+    margin-left: 0.5vw;
+     width: 4vw;
+    height: auto;
+}
+
+
+#login {
+    margin-left: auto;
+      width: 4.5vw;
+    height: auto;
+}
+
+#search {
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+      width: 4vw;
+    height: auto;
+}
+
+
+#titlephoto{
+  background-image: url("img/chairman.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-column: 1/5;
+  grid-row: 2/3;
+  
+}
+
+#f1{
+  background-color: rgba(255, 102, 0);
+  grid-column: 1/2;
+  grid-row: 3/5;
+
+  border-radius: 30px;
+     /*Dit is de Flex methode om content in het midden uit te lijnen*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    
+}
+
+#f1:hover .browse{
+  color: black;
+}
+
+#allfonts{
+  width: 15vw;
+  height: auto;
+  
+
+}
+
+#orange{
+  color: rgba(255, 102, 0);
+}
+
+#f2{
+  background-color: rgba(0, 0, 0);
+  grid-column: 2/3;
+  grid-row: 3/4;
+  border-radius: 30px;
+     /*Dit is de Flex methode om content in het midden uit te lijnen*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    
+}
+
+#f2:hover .browse{
+  color: white;
+}
+
+#globalfonts{
+  width: 10vw;
+  height: auto;
+  
+}
+
+#black{
+   color: rgba(0, 0, 0);
+}
+
+#f3{
+  background-color: rgba(255, 186, 207);
+  grid-column: 3/4;
+  grid-row: 3/4;
+  border-radius: 30px;
+     /*Dit is de Flex methode om content in het midden uit te lijnen*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+#f3:hover .browse{
+  color: black;
+}
+
+#variablefonts{
+  width: 14vw;
+  height: auto;
+  
+}
+
+#pink{
+   color: rgba(255, 186, 207);
+}
+
+#f4{
+  background-color: rgba(0, 182, 222);
+  grid-column: 4/5;
+  grid-row: 3/4;
+  border-radius: 30px;
+     /*Dit is de Flex methode om content in het midden uit te lijnen*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#f4:hover .browse{
+  color: black;
+}
+
+#smartfonts{
+  width: 15vw;
+  height: auto;
+  
+}
+
+#cyan{
+   color: rgba(0, 182, 222);
+}
+
+#f5{
+  background-color: rgba(181, 237, 255);
+  grid-column: 2/3;
+  grid-row: 4/5;
+  border-radius: 30px;
+     /*Dit is de Flex methode om content in het midden uit te lijnen*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#f5:hover .browse{
+  color: black;
+}
+
+#superfamilies{
+  width: 15vw;
+  height: auto;
+  
+}
+
+#blue{
+   color: rgba(181, 237, 255);
+}
+
+#f6{
+  background-color: rgba(190, 161, 116);
+  grid-column: 3/4;
+  grid-row: 4/5;
+  border-radius: 30px;
+     /*Dit is de Flex methode om content in het midden uit te lijnen*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#f6:hover .browse{
+  color: black;
+}
+
+
+#legibilityfonts{
+  width: 15vw;
+  height: auto;
+  
+}
+
+#brown{
+   color: rgba(190, 161, 116);
+}
+
+#f7{
+  background-color: rgba(255, 77, 0);
+  grid-column: 4/5;
+  grid-row: 4/5;
+  border-radius: 30px;
+     /*Dit is de Flex methode om content in het midden uit te lijnen*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#f7:hover .browse{
+  color: black;
+}
+
+#opticalsizes{
+  width: 15vw;
+  height: auto;
+  
+}
+
+#bloodorange{
+   color: rgba(255, 77, 0);
+}
+
+
+
+
+
+
+
+
+
+
+#blog{
+  background-color: white;
+  grid-column: 1/5;
+  grid-row: 5/6;
+  display: flex;
+  align-items: center;
+}
+
+#allposts{
+  margin-left: 1vw;
+  height: 7vh;
+}
+
+#b1{
+  background-color: white;
+  grid-column: 1/2;
+  grid-row: 6/7;
+  
+}
+
+#blog1{
+  height: 14vw;
+
+}
+#blog2{
+  height: 14vw;
+
+}
+
+#blog3{
+  height: 14vw;
+
+}
+
+#blog4{
+  height: 14vw;
+
+}
+
+
+#b2{
+  background-color: white;
+  grid-column: 2/3;
+  grid-row: 6/7;
+}
+
+#b3{
+  background-color:  white;
+  grid-column: 3/4;
+  grid-row: 6/7;
+}
+
+#b4{
+  background-color:  white;
+  grid-column: 4/5;
+  grid-row: 6/7;
+}
+
